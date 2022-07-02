@@ -1,4 +1,5 @@
 ![Stack](https://i.imgur.com/cCiHOGS.jpg)
+
 # Hugo Theme Stack
 
 > Card-style Hugo theme designed for bloggers.
@@ -40,8 +41,8 @@ It's necessary to use **Hugo Extended ≥ 0.87.0**.
 
 ## Installation
 
-* Route 1: Clone / Download this repository to `themes` folder
-* Route 2: Turn your site into a hugo module and add this theme as a module dependency
+- Route 1: Clone / Download this repository to `themes` folder
+- Route 2: Turn your site into a hugo module and add this theme as a module dependency
 
  Edit your site config following `exampleSite/config.yaml`.
 
@@ -75,7 +76,7 @@ Your support is greatly appreciated :)
 | [Tabler icons](https://github.com/tabler/tabler-icons) | Default menu icons | [MIT](https://github.com/tabler/tabler-icons/blob/master/LICENSE) |
 | [jonsuh/hamburgers](https://github.com/jonsuh/hamburgers) | Hamburger icon of menu | [MIT](https://github.com/jonsuh/hamburgers/blob/master/LICENSE) |
 | [lepture/yue.css](https://github.com/lepture/yue.css) | Part of it is used for styling article content | MIT |
-| [Typlog](https://typlog.com/) | Where the markdown gallery syntax is borrowed from | The author gave me the permission | 
+| [Typlog](https://typlog.com/) | Where the markdown gallery syntax is borrowed from | The author gave me the permission |
 | [Pure CSS implementation of Google Photos / 500px image layout](https://github.com/xieranmaya/blog/issues/6) | Used for image gallery | - |
 
 ### References
