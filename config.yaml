@@ -21,7 +21,7 @@ params:
   sidebar:
     compact: false
     emoji: 🥑
-    subtitle: "Hi welcome to my website! I'm just a guy on his jorney through life. \nHere you can find my bio and some other things that I enjoy such as tutorials and my opinions on tech and other random topics."
+    subtitle: 😎
     avatar:
       enabled: true
       local: true
@@ -41,11 +41,11 @@ params:
     provider: disqus
 
     disqusjs:
-      shortname:
-      apiUrl:
-      apiKey:
-      admin:
-      adminLabel:
+      shortname: nicocossiom
+      apiUrl: https://disqus.com/api/3.0/
+      apiKey: RjKJSuyVEVa0UqjX10P7UiCAurxMsFfUjQ7h8vaPdtTJ57R7nMlbmJEZAuFANYHb
+      admin: nicolas_cossio
+      adminLabel: admin
 
     utterances:
       repo:
@@ -154,18 +154,25 @@ params:
       enabled: true
 
 menu:
-  main: []
+  main:
+    - identifier: posts
+      name: Posts
+      url: /posts/
+      weight: -100
+      params:
+        icon: posts
+      newTab: true
 
   social:
     - identifier: github
       name: GitHub
-      url: https://github.com/CaiJimmy/hugo-theme-stack
+      url: https://github.com/nicocossiom
       params:
         icon: brand-github
 
     - identifier: twitter
       name: Twitter
-      url: https://twitter.com
+      url: https://twitter.com/nicolascossiom
       params:
         icon: brand-twitter
 
