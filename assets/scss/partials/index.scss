@@ -1,0 +1,29 @@
+.homepage-bigtext {
+	text-align: center;
+	font-size: 34px;
+	font-weight: 600;
+	color: var(--card-text-color-main);
+	margin-bottom: 5px;
+	margin-top: 20px;
+}
+
+.homepage-bigtext-subtext {
+	text-align: center;
+	font-size: 24px;
+	font-weight: 600;
+	color: var(--card-text-color-secondary);
+	max-width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.homepage-bigtext-image {
+	// margin-bottom: 20px;
+	border-radius: 20px;
+	max-width: 100%;
+	width: auto;
+	margin-left: auto;
+	margin-right: auto;
+	height: 500px;
+	object-fit: cover;
+}

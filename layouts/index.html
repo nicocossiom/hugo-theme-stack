@@ -1,21 +1,38 @@
 {{ define "main" }}
-    {{ $pages := where .Site.RegularPages "Type" "in" .Site.Params.mainSections }}
-    {{ $notHidden := where .Site.RegularPages "Params.hidden" "!=" true }}
-    {{ $filtered := ($pages | intersect $notHidden) }}
-    {{ $pag := .Paginate ($filtered) }}
 
-        
+{{ $pages := where .Site.RegularPages "Type" "in" .Site.Params.mainSections }}
+{{ $notHidden := where .Site.RegularPages "Params.hidden" "!=" true }}
+{{ $filtered := ($pages | intersect $notHidden) }}
+{{ $pag := .Paginate ($filtered) }}
 
-    <section class="article-list">
-        {{ range $index, $element := $pag.Pages }}
-            {{ partial "article-list/default" . }}
-        {{ end }}
-    </section>
 
-    {{- partial "pagination.html" . -}}
-    {{- partial "footer/footer" . -}}
+
+{{ with resources.Get "/img/nico.jpeg" }}
+{{ with .Err }}
+{{ warnf "%s" . }}
+{{ else }}
+<img class="homepage-bigtext-image" src="{{ .RelPermalink }}">
+{{ end }}
+{{ end }}
+
+<div class="homepage-bigtext-subtext">
+    My name is Nico Cossio, I am a 21 year old CS student, currently living in Madrid, Spain 🇪🇸.
+    Here I post some tutorials, projects and links to my socials.
+</div>
+
+<div class="homepage-bigtext">My latests posts:</div>
+
+
+<section class="article-list">
+    {{ range $index, $element := $pag.Pages }}
+    {{ partial "article-list/default" . }}
+    {{ end }}
+</section>
+
+{{- partial "pagination.html" . -}}
+{{- partial "footer/footer" . -}}
 {{ end }}
 
 {{ define "right-sidebar" }}
-    {{ partial "sidebar/right.html" (dict "Context" . "Scope" "homepage") }}
+{{ partial "sidebar/right.html" (dict "Context" . "Scope" "homepage") }}
 {{ end }}

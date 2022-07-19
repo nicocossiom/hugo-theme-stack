@@ -25,7 +25,7 @@ params:
     avatar:
       enabled: true
       local: true
-      src: img/nico.png
+      src: img/n.png
 
   article:
     math: false
@@ -129,14 +129,14 @@ params:
   opengraph:
     twitter:
       # Your Twitter username
-      site:
+      site: nicolascossiom
 
       # Available values: summary, summary_large_image
       card: summary_large_image
 
   defaultImage:
     opengraph:
-      enabled: false
+      enabled: true
       local: false
       src:
 
