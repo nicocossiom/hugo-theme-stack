@@ -3,4 +3,18 @@
     box-shadow: var(--shadow-l1);
     border-radius: var(--card-border-radius);
     padding: var(--card-padding);
+    align-content: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.not-found-button {
+    background-color: var(--card-background);
+    border-radius: var(--card-border-radius);
+    border-style: ridge;
+    padding: 1.5rem; 
+    cursor: pointer;
 }

@@ -2,7 +2,11 @@
     <div class="not-found-card">
         <h1 class="article-title">{{ T "notFound.title" }}</h1>
         <h2 class="article-subtitle">{{ T "notFound.subtitle" }}</h2>
+        {{/*  <img src="img/404.gif" alt="error image"/>  */}}
+        <p></p>
+        <button class="article-category article-tags" onclick="window.history.back()">
+            Go back
+        </button> 
     </div>
-    <p>Holaaa</p>
     {{ partialCached "footer/footer" . }}
 {{ end }}
