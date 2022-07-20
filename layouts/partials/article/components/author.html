@@ -1,0 +1,15 @@
+{{ if not (eq .Params.author false) }}
+<div class="article-page article-author">
+    {{ with resources.Get "/img/nico.jpeg" }}
+    {{ with .Err }}
+    {{ warnf "%s" . }}
+    {{ else }}
+    <img class="article-author-image" src="{{ .RelPermalink }}">
+    {{ end }}
+    {{ end }}
+    <div class="article-author-name">
+        by Nico Cossio
+    </div>
+
+</div>
+{{ end }}

@@ -29,6 +29,55 @@
 			}
 		}
 
+		.article-author {
+			padding: var(--card-padding);
+			display: flex;
+			align-items: center;
+			flex-direction: row;
+			.article-author-image {
+				// create a small image for the author
+				width: 60px;
+				height: 60px;
+				object-fit: cover;
+				border-radius: 50%;
+				margin-right: 10px;
+			}
+
+			.article-author-name {
+				font-size: 1.4rem;
+				color: var(--card-text-color-secondary);
+			}
+		}
+
+		.share-menu {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			justify-content: baseline;
+			padding: var(--card-padding);
+			padding-top: 10px;
+			padding-bottom: 10px;
+			max-width: fit-content;
+			border-radius: 40px;
+			background: var(--card-background);
+			box-shadow: var(--shadow-l1);
+			border-color: var(--body-text-color);
+			border-width: 20px;
+			font-weight: 500;
+			font-size: 2rem;
+			margin: 0 auto;
+
+			a {
+				margin-left: 1.4rem;
+
+				svg {
+					width: 44px;
+					height: 44px;
+					stroke-width: 2px;
+				}
+			}
+		}
+
 		.article-content {
 			margin: var(--card-padding) 0;
 			color: var(--card-text-color-main);
